@@ -1,4 +1,11 @@
 # ASP.NET
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'sonarqube0011'
+    organization: 'sonarqube001'
+    scannerMode: 'MSBuild'
+    projectKey: 'sonarqube001'
+    projectName: 'sampleproject01'
 
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
